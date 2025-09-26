@@ -1,0 +1,8 @@
+logo_image: '/images/iysak_logo.png' # You can add own logo. For example '/images/logo.png'.
+
+menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'Mein Shop'
+      url: 'https://iysak.com'
