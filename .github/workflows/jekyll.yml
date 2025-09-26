@@ -1,31 +1,22 @@
 # .github/workflows/deploy.yml
 
-# Name of the workflow
 name: Deploy Jekyll site to GitHub Pages
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push events but only for the "main" branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -33,10 +24,9 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Setup Node.js ⚙️
-        # Your repo has a package.json, so we need to install node dependencies
         uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "20"
           cache: 'npm'
 
       - name: Install JS dependencies 📦
@@ -45,16 +35,18 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          # Check your Gemfile for the exact Ruby version
           ruby-version: '3.1' 
-          bundler-cache: true # runs 'bundle install' and caches installed gems
+          bundler-cache: true
+          # Tell Bundler where to find the Gemfile
+          working-directory: ./site
 
       - name: Setup Pages 📄
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll 🔨
-        # Uses the build script from the Gemfile
+        # Run the build command from within the /site directory
+        working-directory: ./site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
@@ -62,10 +54,9 @@ jobs:
       - name: Upload artifact ⬆️
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the '_site' directory
-          path: './_site'
+          # Update the path to the generated site
+          path: './site/_site'
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
