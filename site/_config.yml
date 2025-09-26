@@ -1,4 +1,7 @@
 title: WorkWithLizz
+website: https://workwithlizz.com
+basewebsite: /
+
 
 plugins:
   - jekyll-bookshop
