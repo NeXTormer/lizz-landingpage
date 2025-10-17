@@ -1,0 +1,6 @@
+---
+name: Ines S.
+position: 
+image: 'images/client3.jpeg'
+blurb: Ich hatte vier Sitzungen mit Lizz, davon drei in Präsenz und eine via Videoanruf. Von Anfang an fühlte ich mich bei ihr gut aufgehoben und verstanden. Seit 2015 bin ich wegen rezidivierender Depressionen, PTBS und generalisierter Angststörung in Therapie. Durch eine zufällige Begegnung mit Lizz im Mai 2025 nutzte ich die Gelegenheit für eine Sitzung, um an meinen Schwierigkeiten zu arbeiten. Lizz wusste schnell, wo sie ansetzen konnte, und ihre Persönlichkeit sowie die angewandten Methoden waren für mich sehr hilfreich. In den ersten drei Sitzungen wurde ich emotional herausgefordert, aber Lizz konnte mich stets gut auffangen. Nach der ersten Sitzung hatte ich eine depressive Episode, und ein therapeutischer Ansatz erwies sich als nicht passend. Lizz hatte jedoch sofort eine alternative Behandlungsoption parat. Auch nach den Sitzungen stehe ich im regelmäßigen Kontakt mit ihr, um Fortschritte und Rückschläge zu besprechen. Trotz der depressiven Episode nach der ersten Sitzung blieb ich aktiv und arbeite daran, alte Verhaltens- und Denkmuster zu verändern. Wenn ich Herausforderungen im Alltag erlebe, helfen mir die Werkzeuge, die ich von Lizz bekommen habe, schnell wieder stabiler zu werden und meinen Tag positiv zu gestalten. Ich bin sehr dankbar und beschenkt, dass ich Lizz begegnet bin
+---
